@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="238.0" maxWidth="286.0" prefHeight="238.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+   <children>
+      <Pane prefHeight="238.0" prefWidth="286.0">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="286.0">
+               <children>
+                  <GridPane hgap="15.0" layoutY="72.0" prefHeight="166.0" prefWidth="264.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="userName" prefHeight="25.0" prefWidth="109.0" promptText="User Name" GridPane.columnIndex="1" />
+                        <PasswordField fx:id="password" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="login" mnemonicParsing="false" onAction="#loginHandler" text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" nodeOrientation="LEFT_TO_RIGHT" text="User Name" GridPane.halignment="RIGHT" />
+                        <Label alignment="CENTER" contentDisplay="TEXT_ONLY" layoutX="46.0" layoutY="72.0" nodeOrientation="LEFT_TO_RIGHT" text="Password" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                        <Button fx:id="exit" mnemonicParsing="false" onAction="#exitHandler" text="Exit" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="68.0" layoutY="47.0" text="Welcome to MyPhotos!" />
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
